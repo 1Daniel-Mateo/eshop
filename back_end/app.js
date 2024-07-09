@@ -1,5 +1,4 @@
 //extensiones
-
 const bodyParser = require('body-parser');
 const express = require('express');
 const mongoose = require('mongoose');
@@ -20,30 +19,47 @@ app.use(morgan('tiny'));
 const ProductShema = mongoose.Schema({
     name: String,
     image: String,
-    countInStock: Number
+    countInStock:{
+        type:Number,
+        required:true
+    } 
 })
 
 //Llamando al modelo
 const Product = mongoose.model('Product', ProductShema);
 
-// Metodo de consulta
-
-app.get(`${api}/products`, (req,res) =>{
-    const product = {
-        id: 1,
-        name: "Gary",
-        image: "Ortiz",
+// Metodo de consulta general usando una funcion asincronica
+app.get(`${api}/products`, async (req,res) =>{
+    const productlist = await Product.find();
+    if (!productlist) {
+        res.status(500).json({success:false})
+    } else {
+        res.send(productlist);
     }
-    res.send(product);
+    
 })
 
 
 // Metodo de registro
 
 app.post(`${api}/products`, (req,res) =>{
-    const NewProduct = req.body;
-    console.log(NewProduct);
-    res.send(NewProduct);
+    const product = new Product({
+        name: req.body.name,
+        image: req.body.image,
+        countInStock: req.body.countInStock
+    })
+
+    //Función de almacenamiento de parametros
+    product.save().then((ProductCreated => {
+        res.status(201).json(ProductCreated)
+    }))
+    //Caso de error 500
+    .catch((err)=>{
+        res.status(500).json({
+            error:err,
+            success:false
+        })
+    }) 
 })
 
 mongoose.connect(process.env.CONECCTION)
