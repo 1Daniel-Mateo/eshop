@@ -9,7 +9,7 @@ const app = express();
 
 require("dotenv/config");
 
-//  Enlace para coneccion URL
+//  Enlace para coneccion URL 
 const api = process.env.URL;
 const productsRouter = require("./routers/products");
 const categorysRouter = require("./routers/categorys");
