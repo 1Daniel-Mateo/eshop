@@ -1,4 +1,6 @@
 //Exportacion de modelo
+const mongoose = require("mongoose");
+const Category = require("../models/category");
 const Product = require("../models/product");
 const express = require("express");
 const router = express.Router();
@@ -13,29 +15,100 @@ router.get(`/`, async (req, res) => {
   }
 });
 
-// Metodo de registro
+//Metodo de consulta especifica
+router.get(`/:id`, async (req, res) => {
+  const productE = await Product.findById(req.params.id);
+  
+  if (!productE) {
+    res.status(500).json({ success: false });
+  } else {
+    res.send(productE);
+  }
+});
 
-router.post(`/`, (req, res) => {
-  const product = new Product({
-    name: req.body.name,
-    image: req.body.image,
-    countInStock: req.body.countInStock,
-  });
+
+// Metodo de registro
+router.post(`/`, async (req, res) => {
+  const category = await Category.findById(req.body.category);
+  if (!category) return res.status(400).send("Categoria Invalida");
+
+  const product = new Product(
+    {
+      name: req.body.name,
+      description: req.body.description,
+      richDescription: req.body.richDescription,
+      image: req.body.image,
+      brand: req.body.brand,
+      price: req.body.price,
+      category: req.body.category,
+      countInStock: req.body.countInStock,
+      rating: req.body.rating,
+      isFeatured: req.body.isFeatured,
+    },
+    {
+      new: true,
+    }
+  );
 
   //Función de almacenamiento de parametros
-  product
-    .save()
-    .then((ProductCreated) => {
-      res.status(201).json(ProductCreated);
-    })
-    //Caso de error 500
-    .catch((err) => {
-      res.status(500).json({
-        error: err,
-        success: false,
-      });
-    });
+  //product = await product.save();
+
+  if (!product) {
+    return res.status(500).send("El producto no se pudo crear");
+  } else {
+    res.send(product);
+  }
 });
+
+
+//Metodo de actualizacion
+router.put("/:id", async (req, res) => {
+  //LLamado al id de una categoria especifica
+  const category = await Category.findById(req.body.category);
+  if (!category) return res.status(400).send("Categoria Invalida");
+
+  const product = await Product.findByIdAndUpdate(
+    req.params.id,
+    {
+      name: req.body.name,
+      description: req.body.description,
+      richDescription: req.body.richDescription,
+      image: req.body.image,
+      brand: req.body.brand,
+      price: req.body.price,
+      category: req.body.category,
+      countInStock: req.body.countInStock,
+      rating: req.body.rating,
+      isFeatured: req.body.isFeatured,
+    },
+    {
+      new: true,
+    }
+  )
+
+  if (!product) {
+    return res.status(400).send('El producto fue actualizado');
+  }else{
+    res.send(product);
+  }
+});
+
+//Metodo de eliminar rest api
+router.delete("/:id", async (req,res) =>{
+  if(!mongoose.isValidObjectId(req.params.id)){
+    res.status(400).send('Producto Invalido')
+  }
+  
+  const productE = await Product.findByIdAndDelete(req.params.id);
+  
+  if (!productE) {
+    res.status(500).json({ success: false });
+  } else {
+    res.send(productE);
+  }
+
+});
+
 
 //Metodo de exportacion de modulo
 module.exports = router;
