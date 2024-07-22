@@ -51,6 +51,17 @@ const ProductShema = mongoose.Schema({
 })
 
 
+// Método virtual para convertir _id a una cadena
+ProductShema.virtual('id').get(function () {
+    return this._id ? this._id.toHexString() : null;
+});
+
+// Habilitar los campos virtuales cuando se convierten a JSON
+ProductShema.set('toJSON', {
+    virtuals: true,
+});
+
+
 //Llamando al modelo
 const Product = mongoose.model('Product', ProductShema);
 module.exports = Product;
