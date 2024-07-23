@@ -1,0 +1,81 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "category",
+    "collectionId": "fa3feeec-8302-4a14-b46d-1666a8df2923",
+    "dateExported": "2024-07-23T23:36:17.416Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a5785d9a-226b-4077-8132-a006bdfa6ccf",
+            "colId": "fa3feeec-8302-4a14-b46d-1666a8df2923",
+            "containerId": "",
+            "name": "actualizar",
+            "url": "http://localhost:3000/APP/categorys/668ee4f4c755f8b9ef2dfb9e",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2024-07-17T18:23:07.839Z",
+            "modified": "2024-07-17T18:23:07.839Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Cartago\",\n  \"color\":\"Azul\",\n  \"icon\":\"Rocas\",\n  \"image\":\"Ninguna\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d47d41fb-3259-4d41-ab7e-64ec16330c71",
+            "colId": "fa3feeec-8302-4a14-b46d-1666a8df2923",
+            "containerId": "",
+            "name": "http://localhost:3000/APP/categorys/6696e1147608c4b7fd528ba4",
+            "url": "http://localhost:3000/APP/categorys/6696e1147608c4b7fd528ba4",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-07-17T18:23:20.834Z",
+            "modified": "2024-07-17T18:23:20.834Z",
+            "headers": []
+        },
+        {
+            "_id": "cb524bdd-6696-43f6-99f7-b9fafcc1453e",
+            "colId": "fa3feeec-8302-4a14-b46d-1666a8df2923",
+            "containerId": "",
+            "name": "http://localhost:3000/APP/categorys/668ee3d9c755f8b9ef2dfb9b",
+            "url": "http://localhost:3000/APP/categorys/668ee3d9c755f8b9ef2dfb9b",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-07-17T18:23:34.014Z",
+            "modified": "2024-07-17T18:23:34.014Z",
+            "headers": []
+        },
+        {
+            "_id": "a862371e-ef39-4998-84f4-03daac78995d",
+            "colId": "fa3feeec-8302-4a14-b46d-1666a8df2923",
+            "containerId": "",
+            "name": "http://localhost:3000/api/products",
+            "url": "http://localhost:3000/APP/categorys",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-07-17T18:23:45.587Z",
+            "modified": "2024-07-22T18:33:55.942Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Cartago\",\n  \"color\":\"Barba\",\n  \"icon\":\"Bandera Romana\",\n  \"image\":\"Ninguna\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3df5b77f-477c-4e9d-8ad1-dca14e66fab5",
+            "colId": "fa3feeec-8302-4a14-b46d-1666a8df2923",
+            "containerId": "",
+            "name": "http://localhost:3000/APP/products",
+            "url": "http://localhost:3000/APP/categorys",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-07-17T18:23:51.546Z",
+            "modified": "2024-07-17T18:23:51.547Z",
+            "headers": []
+        }
+    ],
+    "ref": "_kp_I1Lyq6Agd1DqEOTTEddI55VjIWjWKIv1OO0MNdmhAPJw34Mdn5bEYuV3Io3U-AysWvIiwmPw2_NaBu9pNg"
+}

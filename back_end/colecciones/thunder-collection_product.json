@@ -1,0 +1,115 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "product",
+    "collectionId": "234dc60d-544e-45fd-9e7a-6a13007ba0cb",
+    "dateExported": "2024-07-23T23:36:47.907Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "36ef8352-eadd-4913-8c6f-72dd757dc982",
+            "colId": "234dc60d-544e-45fd-9e7a-6a13007ba0cb",
+            "containerId": "",
+            "name": "crear",
+            "url": "http://localhost:3000/APP/products",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-07-17T19:01:55.029Z",
+            "modified": "2024-07-22T19:17:49.048Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Diplomas\",\n  \"description\": \"Marca lider de ropa\",\n  \"richDescription\": \"Excelente marca\",\n  \"image\": \"https://example.com/image.jpg\",\n  \"brand\": \"DERECHO\",\n  \"category\":\"6696ec3ec7e26b2c0810a9d3\", \n  \"price\":19,\n  \"countInStock\": 10,\n  \"rating\": 4.5,\n  \"isFeatured\": true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "358632f1-b4f3-4bc5-ada2-a207463fd26a",
+            "colId": "234dc60d-544e-45fd-9e7a-6a13007ba0cb",
+            "containerId": "",
+            "name": "consulta general",
+            "url": "http://localhost:3000/APP/products",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-17T20:02:39.983Z",
+            "modified": "2024-07-17T20:03:04.254Z",
+            "headers": []
+        },
+        {
+            "_id": "3f274a69-a3ca-48bf-bfb5-7dc0b49dea0c",
+            "colId": "234dc60d-544e-45fd-9e7a-6a13007ba0cb",
+            "containerId": "",
+            "name": "consulta especifica",
+            "url": "http://localhost:3000/APP/products/669819491350d547bd398aa1",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-07-17T20:02:43.757Z",
+            "modified": "2024-07-17T20:09:16.501Z",
+            "headers": []
+        },
+        {
+            "_id": "ccf9c0ff-d676-435d-b537-61edaf11faa4",
+            "colId": "234dc60d-544e-45fd-9e7a-6a13007ba0cb",
+            "containerId": "",
+            "name": "actualizar",
+            "url": "http://localhost:3000/APP/products/669819491350d547bd398aa1",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-07-17T20:13:43.791Z",
+            "modified": "2024-07-17T20:23:14.325Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Nasa 10\",\n  \"description\": \"Robot Nasa 10\",\n  \"richDescription\": \"Este es un producto unico y nuevo\",\n  \"image\": \"https://example.com/image.jpg\",\n  \"brand\": \"Marca de prueba\",\n  \"price\": 19,\n  \"category\": \"668ee4f4c755f8b9ef2dfb9e\",\n  \"countInStock\": 10,\n  \"rating\": 4.5,\n  \"isFeatured\": true,\n  \"dateCreated\": \"2024-07-17T19:19:37.707Z\",\n  \"__v\": 0\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "41a432d8-4e9c-4be4-9a71-d3a27bf29859",
+            "colId": "234dc60d-544e-45fd-9e7a-6a13007ba0cb",
+            "containerId": "",
+            "name": "eliminar",
+            "url": "http://localhost:3000/APP/products/66981b8cb708b114499e7ee9",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-07-17T20:25:26.900Z",
+            "modified": "2024-07-17T20:38:31.656Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ]
+        },
+        {
+            "_id": "ebf5fa33-a3bb-4cdf-a71f-8778a1241289",
+            "colId": "234dc60d-544e-45fd-9e7a-6a13007ba0cb",
+            "containerId": "",
+            "name": "categoria",
+            "url": "http://localhost:3000/APP/products?categories=668ee4f4c755f8b9ef2dfb9e",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-07-22T18:39:37.972Z",
+            "modified": "2024-07-22T18:42:22.372Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "categories",
+                    "value": "668ee4f4c755f8b9ef2dfb9e",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "uI7fg0SPyK6Jtus0NvxAD85CMjkX2kUMXQqqA9fWL2uB9MhOlOaTVy4BH5v_-miLSML87RoVVBn8lg_UP8YfSg"
+}

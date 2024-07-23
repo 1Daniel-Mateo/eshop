@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "669819491350d547bd398aa1"
+  },
+  "name": "Nasa 10",
+  "description": "Robot Nasa 10",
+  "richDescription": "Este es un producto unico y nuevo",
+  "image": "https://example.com/image.jpg",
+  "brand": "Marca de prueba",
+  "price": 19,
+  "category": {
+    "$oid": "668ee4f4c755f8b9ef2dfb9e"
+  },
+  "countInStock": 10,
+  "rating": 4.5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": "2024-07-17T19:19:37.707Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669eb2feeee9b2c44037d4fe"
+  },
+  "name": "Diplomas",
+  "description": "Marca lider de ropa",
+  "richDescription": "Excelente marca",
+  "image": "https://example.com/image.jpg",
+  "brand": "DERECHO",
+  "price": 19,
+  "category": {
+    "$oid": "6696ec3ec7e26b2c0810a9d3"
+  },
+  "countInStock": 10,
+  "rating": 4.5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": "2024-07-22T19:29:02.297Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669eb4dca2dd7e2e2a495e3e"
+  },
+  "name": "Diplomas",
+  "description": "Marca lider de ropa",
+  "richDescription": "Excelente marca",
+  "image": "https://example.com/image.jpg",
+  "brand": "DERECHO",
+  "price": 19,
+  "category": {
+    "$oid": "6696ec3ec7e26b2c0810a9d3"
+  },
+  "countInStock": 10,
+  "rating": 4.5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": "2024-07-22T19:37:00.735Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669eb4dda2dd7e2e2a495e41"
+  },
+  "name": "Diplomas",
+  "description": "Marca lider de ropa",
+  "richDescription": "Excelente marca",
+  "image": "https://example.com/image.jpg",
+  "brand": "DERECHO",
+  "price": 19,
+  "category": {
+    "$oid": "6696ec3ec7e26b2c0810a9d3"
+  },
+  "countInStock": 10,
+  "rating": 4.5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": "2024-07-22T19:37:01.877Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a03e11dc95ae27f32575cf"
+  },
+  "name": "Diplomas",
+  "description": "Marca lider de ropa",
+  "richDescription": "Excelente marca",
+  "image": "https://example.com/image.jpg",
+  "brand": "DERECHO",
+  "price": 19,
+  "category": {
+    "$oid": "6696ec3ec7e26b2c0810a9d3"
+  },
+  "countInStock": 10,
+  "rating": 4.5,
+  "isFeatured": true,
+  "dateCreated": {
+    "$date": "2024-07-23T23:34:41.301Z"
+  },
+  "__v": 0
+}]

@@ -109,7 +109,7 @@ router.get(`/`, async (req, res) => {
   if (req.query.categories) {
     filtrador = { category: req.query.categories.split(",") };
   }
-//Este metodo es unico
+
   const productlist = await Product.find(filtrador).populate("category");
   if (!productlist) {
     res.status(500).json({ success: false });

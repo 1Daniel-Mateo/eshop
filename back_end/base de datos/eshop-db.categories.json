@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "668ee4f4c755f8b9ef2dfb9e"
+  },
+  "name": "Cartago",
+  "image": "Ninguna",
+  "__v": 0,
+  "color": "Azul",
+  "icon": "Rocas"
+},
+{
+  "_id": {
+    "$oid": "6696e1147608c4b7fd528ba4"
+  },
+  "name": "Romanos",
+  "color": "Azul",
+  "icon": "Bandera Romana",
+  "image": "Ninguna",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6696e1167608c4b7fd528ba6"
+  },
+  "name": "Romanos",
+  "color": "Azul",
+  "icon": "Bandera Romana",
+  "image": "Ninguna",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6696ec3ec7e26b2c0810a9d3"
+  },
+  "name": "Romanos",
+  "color": "Azul",
+  "icon": "Bandera Romana",
+  "image": "Ninguna",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66981566182d63c8db1e8451"
+  },
+  "name": "Romanos",
+  "color": "Azul",
+  "icon": "Bandera Romana",
+  "image": "Ninguna",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669ea6138fba359dfc8ed3bf"
+  },
+  "name": "Cartago",
+  "color": "Barba",
+  "icon": "Bandera Romana",
+  "image": "Ninguna",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669ea6218fba359dfc8ed3c1"
+  },
+  "name": "Cartago",
+  "color": "Barba",
+  "icon": "Bandera Romana",
+  "image": "Ninguna",
+  "__v": 0
+}]
