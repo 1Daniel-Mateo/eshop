@@ -4,6 +4,7 @@ const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const cors = require("cors");
+// const authJwt = require('./helpers/jwt');
 
 const app = express();
 
@@ -13,15 +14,20 @@ require("dotenv/config");
 const api = process.env.URL;
 const productsRouter = require("./routers/products");
 const categorysRouter = require("./routers/categorys");
+const UsesRouter = require("./routers/users");
+
 
 //Middlaware
 app.use(bodyParser.json());
 app.use(morgan("tiny"));
 app.options("*", cors());
+//Autenticacion Jwt
+// app.use(authJwt());
 
 //Llamando al router
 app.use(`${api}/products`, productsRouter);
 app.use(`${api}/categorys`, categorysRouter);
+app.use(`${api}/users`, UsesRouter);
 
 mongoose
   .connect(process.env.CONECCTION)

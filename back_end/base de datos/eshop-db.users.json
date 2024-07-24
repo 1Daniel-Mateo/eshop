@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "66a15e596b91b6ea632ad16c"
+  },
+  "name": "Juan Pérez",
+  "email": "juanperez@example.com",
+  "passwordHash": "1234567890",
+  "phone": 1234567890,
+  "isAdmin": false,
+  "street": "Calle 123",
+  "apartment": "Apto 101",
+  "zip": "12345",
+  "city": "Ciudad de México",
+  "country": "México",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a15eca6b91b6ea632ad16e"
+  },
+  "name": "Ana García",
+  "email": "anagarcia@example.com",
+  "passwordHash": "0987654321",
+  "phone": {
+    "$numberLong": "9876543210"
+  },
+  "isAdmin": true,
+  "street": "Calle 456",
+  "apartment": "Apto 202",
+  "zip": "67890",
+  "city": "Ciudad de México",
+  "country": "México",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a15edd6b91b6ea632ad170"
+  },
+  "name": "Carlos López",
+  "email": "carloslopez@example.com",
+  "passwordHash": "1234567890",
+  "phone": 1234567890,
+  "isAdmin": false,
+  "street": "Calle 789",
+  "apartment": "Apto 303",
+  "zip": "12345",
+  "city": "Ciudad de México",
+  "country": "México",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a15f32ed1d2f977c422a13"
+  },
+  "name": "María Hernández",
+  "email": "mariahernandez@example.com",
+  "passwordHash": "0987654321",
+  "phone": {
+    "$numberLong": "9876543210"
+  },
+  "isAdmin": true,
+  "street": "Calle 1011",
+  "apartment": "Apto 404",
+  "zip": "67890",
+  "city": "Ciudad de México",
+  "country": "México",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a15f3bed1d2f977c422a15"
+  },
+  "name": "Pedro Martínez",
+  "email": "pedromartinez@example.com",
+  "passwordHash": "1234567890",
+  "phone": 1234567890,
+  "isAdmin": false,
+  "street": "Calle 1213",
+  "apartment": "Apto 505",
+  "zip": "12345",
+  "city": "Ciudad de México",
+  "country": "México",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a161700fb2cfd56ec77dc7"
+  },
+  "name": "Pedro Martínez",
+  "email": "pedromartinez@example.com",
+  "passwordHash": "$2a$12$gUYK6cw87vLHvbDhkBrs.e3yYbNOuFV0OGt2nahwr7PdD9zXHQKdW",
+  "phone": 1234567890,
+  "isAdmin": false,
+  "street": "Calle 1213",
+  "apartment": "Apto 505",
+  "zip": "12345",
+  "city": "Ciudad de México",
+  "country": "México",
+  "__v": 0
+}]

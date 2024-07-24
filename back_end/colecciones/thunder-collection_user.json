@@ -1,0 +1,79 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "user",
+    "collectionId": "4503075f-c4db-4476-9e0a-786ab1bda3c4",
+    "dateExported": "2024-07-24T21:43:29.711Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e649f1a7-1f43-46d6-ad88-38dd8c646b30",
+            "colId": "4503075f-c4db-4476-9e0a-786ab1bda3c4",
+            "containerId": "",
+            "name": "crear usuario",
+            "url": "http://localhost:3000/APP/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-24T20:01:48.522Z",
+            "modified": "2024-07-24T20:17:39.603Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Pedro Martínez\",\n    \"email\": \"pedromartinez@example.com\",\n    \"password\": \"P3rr0\",\n    \"phone\": 1234567890,\n    \"isAdmin\": false,\n    \"street\": \"Calle 1213\",\n    \"apartment\": \"Apto 505\",\n    \"zip\": \"12345\",\n    \"city\": \"Ciudad de México\",\n    \"country\": \"México\"\n}\n  \n\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "37e750c6-9686-4d56-b721-9e2b720e3af1",
+            "colId": "4503075f-c4db-4476-9e0a-786ab1bda3c4",
+            "containerId": "",
+            "name": "Consulta de usuarios",
+            "url": "http://localhost:3000/APP/users",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-07-24T20:09:29.315Z",
+            "modified": "2024-07-24T20:09:37.901Z",
+            "headers": []
+        },
+        {
+            "_id": "71f1655f-bc5d-43a3-a9a6-2260baccbd61",
+            "colId": "4503075f-c4db-4476-9e0a-786ab1bda3c4",
+            "containerId": "",
+            "name": "Consulta especifica",
+            "url": "http://localhost:3000/APP/users/66a161700fb2cfd56ec77dc7",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-24T20:20:09.648Z",
+            "modified": "2024-07-24T20:20:27.752Z",
+            "headers": []
+        },
+        {
+            "_id": "989db94f-b1db-4927-b297-dddb6972dd4a",
+            "colId": "4503075f-c4db-4476-9e0a-786ab1bda3c4",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/APP/users/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-07-24T20:55:11.736Z",
+            "modified": "2024-07-24T21:02:52.796Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"juanperez@example.com\",\n    \"password\": \"1234567890\"\n}\n  \n\n",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Z3XQOhrtjhe4pcfTNAEoFDV6BPyDzZWLPeV7zmLB65EK6sJyb8t-BaPwnS4bQ2sXZrEVhhSpRrvJQUSKRpGm1w"
+}
