@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "user",
     "collectionId": "4503075f-c4db-4476-9e0a-786ab1bda3c4",
-    "dateExported": "2024-07-24T21:43:29.711Z",
+    "dateExported": "2024-07-25T19:57:39.504Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -15,7 +15,7 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-07-24T20:01:48.522Z",
-            "modified": "2024-07-24T20:17:39.603Z",
+            "modified": "2024-07-25T19:53:05.871Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -26,6 +26,10 @@
                 "type": "json",
                 "raw": "{\n    \"name\": \"Pedro Martínez\",\n    \"email\": \"pedromartinez@example.com\",\n    \"password\": \"P3rr0\",\n    \"phone\": 1234567890,\n    \"isAdmin\": false,\n    \"street\": \"Calle 1213\",\n    \"apartment\": \"Apto 505\",\n    \"zip\": \"12345\",\n    \"city\": \"Ciudad de México\",\n    \"country\": \"México\"\n}\n  \n\n",
                 "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmExNWU1OTZiOTFiNmVhNjMyYWQxNmMiLCJpYXQiOjE3MjE5MjkzOTV9.BiH0NAFoFl5j_M1xhyGcma5B9NhY9pR9n-Z7cxnYDkU"
             }
         },
         {
@@ -61,7 +65,7 @@
             "method": "POST",
             "sortNum": 40000,
             "created": "2024-07-24T20:55:11.736Z",
-            "modified": "2024-07-24T21:02:52.796Z",
+            "modified": "2024-07-25T19:53:20.952Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -72,8 +76,12 @@
                 "type": "json",
                 "raw": "{\n    \"email\": \"juanperez@example.com\",\n    \"password\": \"1234567890\"\n}\n  \n\n",
                 "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmExNWU1OTZiOTFiNmVhNjMyYWQxNmMiLCJpYXQiOjE3MjE5MjkzOTV9.BiH0NAFoFl5j_M1xhyGcma5B9NhY9pR9n-Z7cxnYDkU"
             }
         }
     ],
-    "ref": "Z3XQOhrtjhe4pcfTNAEoFDV6BPyDzZWLPeV7zmLB65EK6sJyb8t-BaPwnS4bQ2sXZrEVhhSpRrvJQUSKRpGm1w"
+    "ref": "Z3XQOhrtjhe4pcfTNAEoFBvbqXE60ptFdJcUifWACulxHDbLP9098bpCtVhI2ycA-U1ZVQ6UFvJmTWdlhokA1w"
 }

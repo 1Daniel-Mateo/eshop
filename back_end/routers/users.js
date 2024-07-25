@@ -67,7 +67,8 @@ router.post(`/login`, async (req, res) => {
     res.status(400).send("¡Contraseña erronea!");
   } else {
     //Enlace de token
-    const token = jwt.sign({ userId: user.id }, secret);
+
+    const token = jwt.sign({ userId: user.id, isAdmin: user.isAdmin }, secret);
     res.status(200).send({ user: user.email, token: token });
   }
 });

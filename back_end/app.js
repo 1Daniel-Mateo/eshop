@@ -4,7 +4,8 @@ const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const cors = require("cors");
-// const authJwt = require('./helpers/jwt');
+const authJwt = require('./helpers/jwt');
+const errorHandler = require('./helpers/error-handler');
 
 const app = express();
 
@@ -22,7 +23,12 @@ app.use(bodyParser.json());
 app.use(morgan("tiny"));
 app.options("*", cors());
 //Autenticacion Jwt
-// app.use(authJwt());
+app.use(authJwt());
+//Errores
+app.use ((err,req,res,next) => errorHandler(err,req,res,next));
+
+
+
 
 //Llamando al router
 app.use(`${api}/products`, productsRouter);
