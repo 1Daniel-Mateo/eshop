@@ -73,4 +73,41 @@ router.post(`/login`, async (req, res) => {
   }
 });
 
+router.put("/:id", async (req, res) => {
+  const userExist = await User.findByIdAndUpdate(req.params.id);
+  let newPass;
+
+  if (req.body.password) {
+    newPass = bcrypt.hashSync(req.body.password, 12);
+  }else{
+    newPass = userExist.passwordHash;
+  }
+
+  const user = await User.findByIdAndUpdate(
+    req.params.id,
+    {
+      name: req.body.name,
+      email: req.body.email,
+      //Encriptacion de contraseña
+      passwordHash: newPass,
+      phone: req.body.phone,
+      isAdmin: req.body.isAdmin,
+      street: req.body.street,
+      apartment: req.body.apartment,
+      zip: req.body.zip,
+      city: req.body.city,
+      country: req.body.country,
+    },
+    {
+      new: true,
+    }
+  );
+
+  if (!user) {
+    return res.status(400).send("El usuario fue editado");
+  } else {
+    res.send(user);
+  }
+});
+
 module.exports = router;

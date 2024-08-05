@@ -16,7 +16,7 @@ const api = process.env.URL;
 const productsRouter = require("./routers/products");
 const categorysRouter = require("./routers/categorys");
 const UsesRouter = require("./routers/users");
-
+const OrderRouter = require("./routers/orders")
 
 //Middlaware
 app.use(bodyParser.json());
@@ -27,13 +27,11 @@ app.use(authJwt());
 //Errores
 app.use ((err,req,res,next) => errorHandler(err,req,res,next));
 
-
-
-
 //Llamando al router
 app.use(`${api}/products`, productsRouter);
 app.use(`${api}/categorys`, categorysRouter);
 app.use(`${api}/users`, UsesRouter);
+app.use(`${api}/orders`, OrderRouter);
 
 mongoose
   .connect(process.env.CONECCTION)
