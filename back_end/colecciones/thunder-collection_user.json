@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "user",
     "collectionId": "4503075f-c4db-4476-9e0a-786ab1bda3c4",
-    "dateExported": "2024-07-25T19:57:39.504Z",
+    "dateExported": "2024-08-05T18:16:51.029Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -81,7 +81,33 @@
                 "type": "bearer",
                 "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmExNWU1OTZiOTFiNmVhNjMyYWQxNmMiLCJpYXQiOjE3MjE5MjkzOTV9.BiH0NAFoFl5j_M1xhyGcma5B9NhY9pR9n-Z7cxnYDkU"
             }
+        },
+        {
+            "_id": "904a8cba-1c61-43b8-ae2a-6796ae3f2554",
+            "colId": "4503075f-c4db-4476-9e0a-786ab1bda3c4",
+            "containerId": "",
+            "name": "actualizar",
+            "url": "http://localhost:3000/APP/users/66a15f32ed1d2f977c422a13",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-08-01T19:08:40.112Z",
+            "modified": "2024-08-01T19:10:59.612Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"juanperez@gmail.com\",\n    \"password\": \"369987\"\n}\n  \n\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmExNWU1OTZiOTFiNmVhNjMyYWQxNmMiLCJpYXQiOjE3MjE5MjkzOTV9.BiH0NAFoFl5j_M1xhyGcma5B9NhY9pR9n-Z7cxnYDkU"
+            }
         }
     ],
-    "ref": "Z3XQOhrtjhe4pcfTNAEoFBvbqXE60ptFdJcUifWACulxHDbLP9098bpCtVhI2ycA-U1ZVQ6UFvJmTWdlhokA1w"
+    "ref": "Z3XQOhrtjhe4pcfTNAEoFDvUYcnJKck4BwOtNqrHKljB5K5QfG_Jdmcf2InpoxW9jj4PEYgqEjQu43FHtdFvyA"
 }

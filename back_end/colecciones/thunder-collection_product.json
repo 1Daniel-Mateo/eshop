@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "product",
     "collectionId": "234dc60d-544e-45fd-9e7a-6a13007ba0cb",
-    "dateExported": "2024-07-23T23:36:47.907Z",
+    "dateExported": "2024-08-05T18:16:25.212Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -37,8 +37,17 @@
             "method": "GET",
             "sortNum": 30000,
             "created": "2024-07-17T20:02:39.983Z",
-            "modified": "2024-07-17T20:03:04.254Z",
-            "headers": []
+            "modified": "2024-07-25T18:01:15.639Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmExNWU1OTZiOTFiNmVhNjMyYWQxNmMiLCJpYXQiOjE3MjE5MjkzOTV9.BiH0NAFoFl5j_M1xhyGcma5B9NhY9pR9n-Z7cxnYDkU"
+            }
         },
         {
             "_id": "3f274a69-a3ca-48bf-bfb5-7dc0b49dea0c",
@@ -100,7 +109,7 @@
             "method": "GET",
             "sortNum": 80000,
             "created": "2024-07-22T18:39:37.972Z",
-            "modified": "2024-07-22T18:42:22.372Z",
+            "modified": "2024-07-25T19:53:38.040Z",
             "headers": [],
             "params": [
                 {
@@ -108,8 +117,12 @@
                     "value": "668ee4f4c755f8b9ef2dfb9e",
                     "isPath": false
                 }
-            ]
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmExNWU1OTZiOTFiNmVhNjMyYWQxNmMiLCJpYXQiOjE3MjE5MjkzOTV9.BiH0NAFoFl5j_M1xhyGcma5B9NhY9pR9n-Z7cxnYDkU"
+            }
         }
     ],
-    "ref": "uI7fg0SPyK6Jtus0NvxAD85CMjkX2kUMXQqqA9fWL2uB9MhOlOaTVy4BH5v_-miLSML87RoVVBn8lg_UP8YfSg"
+    "ref": "uI7fg0SPyK6Jtus0NvxADz9ypkenz_xAPOu8twMPWZFyszbj53QOJSsTfmR0eTuC6qA9pdU7CBWcItZqXfu7tw"
 }
