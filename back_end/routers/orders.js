@@ -28,7 +28,7 @@ router.get(`/:id`, async (req, res) => {
 // Metodo de registro
 router.post(`/`, async (req, res) => {
   
-  const orderItemsIds = req.body.orderItems.map(async Items => {
+  const orderItemsIds = Promise.all(req.body.orderItems.map(async Items => {
       let newOrderItem = new OrderItem({
         quantity: Items.quantity,
         product: Items.product
@@ -37,12 +37,13 @@ router.post(`/`, async (req, res) => {
       newOrderItem = await newOrderItem.save();
 
       return newOrderItem._id;
-    })
+    }));
 
-    console.log(orderItemsIds);
+    const itemOrder = await orderItemsIds;
+    console.log(itemOrder);
 
   let order = new Order({
-    orderItems: orderItemsIds,
+    orderItems: itemOrder,
     shippingAddress1: req.body.shippingAddress,
     shippingAddress2: req.body.shippingAddress2,
     city: req.body.city,
