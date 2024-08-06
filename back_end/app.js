@@ -33,9 +33,7 @@ app.use(`${api}/categorys`, categorysRouter);
 app.use(`${api}/users`, UsesRouter);
 app.use(`${api}/orders`, OrderRouter);
 
-mongoose
-  .connect(process.env.CONECCTION)
-  .then(() => {
+mongoose.connect(process.env.CONECCTION).then(() => {
     console.log("Base de datos conecetada");
   })
   .catch(() => {

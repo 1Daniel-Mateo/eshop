@@ -4,6 +4,20 @@ const Category = require("../models/category");
 const Product = require("../models/product");
 const express = require("express");
 const router = express.Router();
+const multer = require("multer");
+
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public/uploads')
+  },
+  filename: function (req, file, cb) {
+    const fieldname = file.originalname.split(' ').join('-');
+    cb(null, fieldname + '-' + Date.now())
+  }
+})
+
+const upload = multer({ storage: storage })
 
 // Metodo de consulta general usando una funcion asincronica
 router.get(`/`, async (req, res) => {
@@ -27,16 +41,19 @@ router.get(`/:id`, async (req, res) => {
 });
 
 // Metodo de registro
-router.post(`/`, async (req, res) => {
+router.post(`/`, upload.single('image') ,async (req, res) => {
   const category = await Category.findById(req.body.category);
   if (!category) return res.status(400).send("Categoria Invalida");
 
+  const fieldname = req.file.fieldname
+  const basePath = `${req.protocol}://${req.get('host')}/public/upload`
   const product = new Product(
     {
       name: req.body.name,
       description: req.body.description,
       richDescription: req.body.richDescription,
-      image: req.body.image,
+      image: `${basePath}${fieldname}`,
+      //ruta de prueba "http://localhost:3000/public/upload/image-1"
       brand: req.body.brand,
       price: req.body.price,
       category: req.body.category,
