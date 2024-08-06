@@ -1,5 +1,6 @@
 const express = require("express");
 const Order = require("../models/order");
+const User = require("../models/user");
 const OrderItem = require("../models/order-Item");
 const router = express.Router();
 
@@ -90,7 +91,7 @@ router.post(`/`, async (req, res) => {
   });
 
   //Función de almacenamiento de parametros
-  // order = await order.save();
+  order = await order.save();
 
   if (!order) {
     res.status(500).json({ success: false });

@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "order",
     "collectionId": "45469451-7516-4a27-ab1d-e8fcb4f4c53d",
-    "dateExported": "2024-08-05T18:16:57.527Z",
+    "dateExported": "2024-08-06T18:36:04.101Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -15,7 +15,7 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-08-01T20:42:31.321Z",
-            "modified": "2024-08-05T17:13:04.509Z",
+            "modified": "2024-08-06T18:33:01.258Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -24,7 +24,7 @@
             ],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"orderItems\": [\n    {\n      \"quantity\": 3,\n      \"product\": \"669eb2feeee9b2c44037d4fe\"\n    },\n    {\n      \"quantity\": 2,\n      \"product\": \"669819491350d547bd398aa1\"\n    }\n  ],\n  \"shippingAddress\": \"Dirección de envío 1\",\n  \"shippingAddress2\": \"Dirección de envío 2\",\n  \"city\": \"Ciudad\",\n  \"zip\": \"12345\",\n  \"country\": \"País\",\n  \"phone\": \"1234567890\",\n  \"status\": \"Pendiente\",\n  \"totalPrice\": 100.00,\n  \"user\": \"Usuario de prueba\"\n}",
+                "raw": "{\n  \"orderItems\": [\n    {\n      \"quantity\": 3,\n      \"product\": \"669eb2feeee9b2c44037d4fe\"\n    },\n    {\n      \"quantity\": 2,\n      \"product\": \"669819491350d547bd398aa1\"\n    }\n  ],\n  \"shippingAddress\": \"Dirección de envío 1\",\n  \"shippingAddress2\": \"Dirección de envío 2\",\n  \"city\": \"Ciudad\",\n  \"zip\": \"12345\",\n  \"country\": \"País\",\n  \"phone\": \"1234567890\",\n  \"status\": \"Pendiente\",\n  \"totalPrice\": 100.00,\n  \"user\": \"66a15e596b91b6ea632ad16c\"\n}",
                 "form": []
             },
             "auth": {
@@ -58,11 +58,11 @@
             "colId": "45469451-7516-4a27-ab1d-e8fcb4f4c53d",
             "containerId": "",
             "name": "consulta especifica",
-            "url": "http://localhost:3000/APP/orders/66b1017d955c37ab314be3e4",
+            "url": "http://localhost:3000/APP/orders/66b26c98fb86d4aaca9cb170",
             "method": "GET",
             "sortNum": 30000,
             "created": "2024-08-05T17:43:02.499Z",
-            "modified": "2024-08-05T17:43:48.115Z",
+            "modified": "2024-08-06T18:34:43.970Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -79,11 +79,11 @@
             "colId": "45469451-7516-4a27-ab1d-e8fcb4f4c53d",
             "containerId": "",
             "name": "editar",
-            "url": "http://localhost:3000/APP/orders/66b1017d955c37ab314be3e4",
+            "url": "http://localhost:3000/APP/orders/66b26c98fb86d4aaca9cb170",
             "method": "PUT",
             "sortNum": 40000,
             "created": "2024-08-05T18:00:03.325Z",
-            "modified": "2024-08-05T18:01:10.034Z",
+            "modified": "2024-08-06T18:34:56.694Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -105,27 +105,22 @@
             "colId": "45469451-7516-4a27-ab1d-e8fcb4f4c53d",
             "containerId": "",
             "name": "eliminar",
-            "url": "http://localhost:3000/APP/orders/66b1017d955c37ab314be3e4",
+            "url": "http://localhost:3000/APP/orders/66b26c98fb86d4aaca9cb170",
             "method": "DELETE",
             "sortNum": 50000,
             "created": "2024-08-05T18:01:50.217Z",
-            "modified": "2024-08-05T18:02:12.023Z",
+            "modified": "2024-08-06T18:35:29.059Z",
             "headers": [
                 {
                     "name": "Content-Type",
                     "value": "application/json"
                 }
             ],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"status\":\"activo\"\n}\n",
-                "form": []
-            },
             "auth": {
                 "type": "bearer",
                 "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmExNWU1OTZiOTFiNmVhNjMyYWQxNmMiLCJpYXQiOjE3MjE5MjkzOTV9.BiH0NAFoFl5j_M1xhyGcma5B9NhY9pR9n-Z7cxnYDkU"
             }
         }
     ],
-    "ref": "lq49IkAlpXrJl-mTat_mXjWawLakFgq83eUAciKIpazAAAkMgTnK-hTKhdRwYwpyNuAlSKf8TWlKtyt0GmADVQ"
+    "ref": "lq49IkAlpXrJl-mTat_mXk2TG47BwrqvTXOttxgCg-Nk6tZbSRHQPGpK-4GT0viYqqIvpwMe4MMUOgKLDmsohw"
 }
