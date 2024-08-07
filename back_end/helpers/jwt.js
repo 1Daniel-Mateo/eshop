@@ -16,6 +16,7 @@ function authJwt() {
     // Rutas de autenticación para usuarios admin
     path: [
       //Rutas de autenticacion
+      { url: /\/public\/uploads(.*)/ , methods:['GET', 'OPTIONS'] },
       { url: /\/APP\/users(.*)/ , methods:['GET', 'OPTIONS']},
       { url: /\/APP\/products(.*)/ , methods:['GET', 'OPTIONS'] },
       { url: /\/APP\/categorys(.*)/ , methods:['GET', 'OPTIONS'] }

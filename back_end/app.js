@@ -26,6 +26,7 @@ app.options("*", cors());
 app.use(authJwt());
 //Errores
 app.use ((err,req,res,next) => errorHandler(err,req,res,next));
+app.use('/public/uploads', express.static(__dirname+'/public/uploads'));
 
 //Llamando al router
 app.use(`${api}/products`, productsRouter);
